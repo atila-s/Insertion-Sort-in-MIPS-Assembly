@@ -31,7 +31,7 @@ When we finish collecting the inputs, we call the **print_list** display the lis
 
 ```
 Unsorted List 
- => [ _element0_ _elemen1_ _element2_ ... _element(n-1)_ ]
+ => [ element0 elemen1 element2 ... element(n-1) ]
 ```
 
 We have the main body of our print label as output_list, for this part, we want the project to do insertion sort after printing so we set $a2 and $a3 just an integer, which will satisfy beq instruction afterward and jump to insertion_sort
@@ -44,7 +44,7 @@ After the inseriton sort, **print_sorted_list** will be called and the list will
 
 ```
 Sorted List
- => [ _elementi_ _elementj_ ... ]
+ => [ elementi elementj ... ]
 ```
 
 Here when we call the printing function, main body is the same but this time we make $a2 less than $a3 so after the printing process is completed, it will branch to **removing_duplicates**
@@ -64,7 +64,7 @@ Here first $s0 becomes $s0 - 1 because we found a repetative element so the size
 
 ```
 Removing duplicates
- => [ _elementi_ _elementj_ ... ]
+ => [ elementi elementj ... ]
 ```
 
 In **print_removed_list** we set $a3 to be greater than $a2 so this time when **output_loop** is finished we'll move to the Reduction part.
@@ -81,7 +81,7 @@ After **loop_sum** is completed, we call **print_sum**. It displays the sum as s
 
 ```
 Reduction
- => _The Sum_
+ => The Sum Calculated
 ```
 
 Then the program is teminated with the following message:
