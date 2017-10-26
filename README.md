@@ -2,8 +2,8 @@
 
 In this project, we are asked to implement Insertion sort algorithm with duplicate removal and reduction using MIPS assembly language in MARS Simulator.
 
-Mert Atila Sakaogullari 49768
-Yusuf Orkun Yenikaya 35154
+Mert Atila S.
+Y.O.Y.
 
 ## Getting Started
 
@@ -98,7 +98,7 @@ Then the program is teminated with the following message:
 
 ### Authors
 
-* **Mert Atila Sakaogullari** [Matiatus](https://github.com/Matiatus)
-* **Yusuf Orkun Yenikaya**  
+* **Mert Atila S.** [Matiatus](https://github.com/Matiatus)
+* **Y.O.Y.**  
 
 
