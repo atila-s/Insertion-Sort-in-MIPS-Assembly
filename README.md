@@ -31,7 +31,7 @@ When we finish collecting the inputs, we call the **print_list** to display the 
 
 ```
 Unsorted List 
- => [ _element0_ _element1_ _element2_ ... _element(n-1)_ ]
+ => [ element0 element1 element2 ... element(n-1) ]
 ```
 
 We have the main body of our print label as output_list, for this part, we want the project to do insertion sort after printing unsorted list. So we set $a2 and $a3 just an integer, which will satisfy beq instruction afterward and move to insertion_sort
@@ -44,7 +44,7 @@ After the inseriton sort, **print_sorted_list** will be called and the list will
 
 ```
 Sorted List
- => [ _elementi_ _elementj_ ... ]
+ => [ Elementi elementj ... ]
 ```
 
 Here when we call the printing function, main body is the same but this time we set $a2 to an integer less than $a3 so after the printing process is completed, it will branch to **removing_duplicates**
@@ -55,7 +55,7 @@ Now that we have the sorted list, we will get rid of the duplicates. We pull $sp
 * When the comparison shows that two elements are same, our cursor is showing the second element and we just move all the rest of the list up by one, by calling **update_the_rest**. 
 
 ```
-Here first $s0 becomes $s0 - 1 because we found a repetitive element, therefore the size will be decreased by one when we delete that
+$s0 becomes $s0 - 1 # as we find a repetitive element, the size will be updated
 ```
 
 **update_the_rest** overwrites the repeated element and moves all the elements in the list up by one in **loop_for_update**. When that update is complete we decrement the cursor by 1 before calling the same loop because otherwise when it gets incremented by 1 at the beginning of the loop, we'll miss checking the comparison of the previous element with the new overwrited element we've carried up.
@@ -64,7 +64,7 @@ Here first $s0 becomes $s0 - 1 because we found a repetitive element, therefore 
 
 ```
 Removing duplicates
- => [ _elementi_ _elementj_ ... ]
+ => [ elementi elementj_... ]
 ```
 
 In **print_removed_list** we set $a3 to be greater than $a2 so this time when **output_loop** is finished we'll move to the Reduction part.
@@ -81,7 +81,7 @@ After **loop_sum** is completed, we call **print_sum**. It displays the sum as s
 
 ```
 Reduction
- => _The Sum_
+ => The Sum
 ```
 
 Then the program is terminated with the following message:
@@ -99,6 +99,6 @@ Then the program is terminated with the following message:
 ### Authors
 
 * **Mert Atila Sakaogullari / 49768** 
-* **Y.O.Y.**
+* **Y.O.Y.**  
 
 
