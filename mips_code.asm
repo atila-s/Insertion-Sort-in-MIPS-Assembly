@@ -1,6 +1,6 @@
 #####################################################################
 #                                                                   #
-# Name:      Mert Atila Sakaogullari  / Yusuf Orkun Yenikaya        #
+# Name:      Mert Atila Sakaogullari  / Y.O.Y.                      #
 #####################################################################
 
 # Assignment 2
